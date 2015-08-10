@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>利用冒泡机制实现对多个子元素的统一处理</title>
+<script type="text/javascript" src="04_EventBubble_Optimize.js"></script>
+<style type="text/css">
+	div * {
+		display: block;
+		margin: 4px;
+		padding: 4px;
+		border: 1px solid white
+	}
+	.redBorder {
+		border: 1px solid red;
+	}
+	.noBorder {
+		border: 1px solid white;
+	}
+</style>
+</head>
+<body>
+	<div id="div">
+		<ul id="ul">
+			<li><a href="#"><span id="target1">暮色苍茫看劲松</span></a></li>
+			<li><a href="#"><span id="target2">乱云飞渡仍从容</span></a></li>
+			<li><a href="#"><span id="target3">天生一个仙人洞</span></a></li>
+			<li><a href="#"><span id="target4">无限风光在险峰</span></a></li>
+		</ul>
+	</div>
+	<div id="logger"></div>
+</body>
+</html>
+
